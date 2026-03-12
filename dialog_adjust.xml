@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1A1A1A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adjustments"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Brightness -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brightness"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/brightnessSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="-100"
+            android:valueTo="100"
+            android:value="0"
+            android:stepSize="1"
+            app:thumbColor="#6200EE"
+            app:trackColorActive="#6200EE"
+            app:trackColorInactive="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Contrast -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contrast"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/contrastSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0.5"
+            android:valueTo="2"
+            android:value="1"
+            android:stepSize="0.01"
+            app:thumbColor="#6200EE"
+            app:trackColorActive="#6200EE"
+            app:trackColorInactive="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Saturation -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturation"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/saturationSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="2"
+            android:value="1"
+            android:stepSize="0.01"
+            app:thumbColor="#6200EE"
+            app:trackColorActive="#6200EE"
+            app:trackColorInactive="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Exposure -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exposure"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/exposureSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="-2"
+            android:valueTo="2"
+            android:value="0"
+            android:stepSize="0.01"
+            app:thumbColor="#6200EE"
+            app:trackColorActive="#6200EE"
+            app:trackColorInactive="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Highlights -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highlights"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/highlightsSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="-100"
+            android:valueTo="100"
+            android:value="0"
+            android:stepSize="1"
+            app:thumbColor="#6200EE"
+            app:trackColorActive="#6200EE"
+            app:trackColorInactive="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Shadows -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shadows"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/shadowsSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="-100"
+            android:valueTo="100"
+            android:value="0"
+            android:stepSize="1"
+            app:thumbColor="#6200EE"
+            app:trackColorActive="#6200EE"
+            app:trackColorInactive="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Sharpness -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sharpness"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sharpnessSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="1"
+            android:value="0"
+            android:stepSize="0.01"
+            app:thumbColor="#6200EE"
+            app:trackColorActive="#6200EE"
+            app:trackColorInactive="#666666"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Reset"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#424242"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnApply"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Apply"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6200EE"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

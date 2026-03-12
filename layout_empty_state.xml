@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/imgEmpty"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/app_name"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:id="@+id/txtEmptyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Items Found"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/text_secondary"/>
+
+    <TextView
+        android:id="@+id/txtEmptyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try adding some photos to see them here."
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_hint"/>
+
+</LinearLayout>

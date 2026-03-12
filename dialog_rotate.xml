@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1A1A1A">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rotate_flip"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Rotation Slider -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotation"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/rotationSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="0"
+        android:valueTo="360"
+        android:value="0"
+        android:stepSize="1"
+        app:thumbColor="#6200EE"
+        app:trackColorActive="#6200EE"
+        app:trackColorInactive="#666666"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Quick Rotation -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Rotate"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/btnRotateLeft"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="↶ 90°"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#424242"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnRotateRight"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="↷ 90°"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#424242"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <!-- Flip Options -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flip"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/btnFlipHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="⟷ Horizontal"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#424242"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnFlipVertical"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="⟷ Vertical"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#424242"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <!-- Apply Button -->
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Apply Changes"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE" />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1A1A1A">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Stroke Size -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brush Size"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/strokeSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="1"
+        android:valueTo="50"
+        android:value="10"
+        android:stepSize="1"
+        app:thumbColor="#6200EE"
+        app:trackColorActive="#6200EE"
+        app:trackColorInactive="#666666"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Color Picker -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/colorPicker"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:clipToPadding="false"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Instructions -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap and drag on the image to draw"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Apply Button -->
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Done"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE" />
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1A1A1A">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Text"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Text Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text"
+        app:boxBackgroundColor="#2A2A2A"
+        app:boxStrokeColor="#6200EE"
+        app:hintTextColor="#999999"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:maxLines="3" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Text Size -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text Size"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sizeSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="20"
+        android:valueTo="150"
+        android:value="50"
+        android:stepSize="5"
+        app:thumbColor="#6200EE"
+        app:trackColorActive="#6200EE"
+        app:trackColorInactive="#666666"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Color Picker -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text Color"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/colorPicker"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:clipToPadding="false"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Apply Button -->
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Add Text"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE" />
+
+</LinearLayout>
